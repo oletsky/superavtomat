@@ -1,0 +1,22 @@
+{
+  "sitename":"superavtomat.edu.ukma.ua",
+"menuitems":[
+  {
+    "alias":"main",
+    "name":"ГОЛОВНА"
+
+  }
+,
+  {
+    "alias":"algorithm",
+    "name":"АЛГОРИТМ"
+  },
+
+  {
+    "alias":"aboutproject",
+    "name":"ПРО ПРОЄКТ"
+  }
+],
+  "kappa":0.7
+}
+

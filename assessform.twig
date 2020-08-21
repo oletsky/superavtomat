@@ -1,0 +1,46 @@
+<!-- Form -->
+
+<form id="mainform">
+    <div class="form-group">
+        <label for="karma">Параметр дисконту = {{ kappa }} </label>
+
+    </div>
+    <div class="form-group">
+        <label for="karma">Ваша карма (0-100) </label>
+        <input type="number"
+               class="form-control"
+               id="karma"
+
+               placeholder="Карма">
+    </div>
+    <div class="form-group">
+        <label for="maxim">Поточний максимум</label>
+        <input type="number"
+               class="form-control"
+               id="maxim"
+
+               placeholder="Поточний максимум">
+    </div>
+    <div>
+        <label for="task1">Оцінка в семестрі</label>
+        <input type="number"
+               name="task1"
+               class="form-control"
+               id="task1"
+
+               placeholder="Оцінка в семестрі">
+    </div>
+    <div class="form-group">
+        <label for="test">Тест (якщо не здавали, введіть -1) </label>
+        <input type="number" class="form-control"
+               name="test"
+               id="test"
+
+               placeholder="Оцінка за тест">
+    </div>
+
+
+
+
+    <button class="btn btn-success" onclick="predict(event,{{ kappa }});">Submit</button>
+</form>
