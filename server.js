@@ -29,7 +29,9 @@ let obj={
     menu: config.menuitems,
     sitename:config.sitename,
     current:curr,
-    kappa:config.kappa
+    kappa:config.kappa,
+    cremain:config.cremain,
+    ckarma:config.ckarma
 };
 
 //Routers

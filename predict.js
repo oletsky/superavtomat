@@ -1,4 +1,4 @@
-function predict(evt, kappa) {
+function predict(evt, kappa, cRemain, cKarma) {
     let max = 100.;
 
 
@@ -10,10 +10,15 @@ function predict(evt, kappa) {
     let remain = (v2 == -1) ? 40 : 10;
     if (v2 == -1) v2 = 0;
     let v = v1 + v2;
-    let r = v + (v/maxim)*remain * karma * 0.01 * kappa;
+    let ratio=v/maxim;
+
+    let coeff=cRemain*ratio+cKarma*karma*0.01;
+    let r = v + remain*coeff * kappa;
     alert(
         "Акумульовані бали: " + v + "\n" +
+        "Коефіцієнт балу: " + cRemain + "\n"+
         "Карма: " + karma + "\n" +
+        "Коефіцієнт карми: " + cKarma + "\n"+
         "Параметр дисконту: " + kappa + "\n\n" +
         "Рекомендований бал: " + r);
     evt.preventDefault();
